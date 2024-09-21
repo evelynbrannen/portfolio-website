@@ -1,0 +1,44 @@
+ 
+.cloud-container {
+    position: relative; 
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-top: -100px;
+}
+
+.sliding-cloud1 {
+    position: absolute;
+    bottom: 170px;
+    left: -20vw;
+    width: 250px;
+    transition: transform 3s ease-out;
+}
+
+.sliding-cloud1.visible {
+    transform: translateX(20vw);
+}
+
+.sliding-cloud2 {
+    position: absolute;
+    bottom: 140px;
+    right: -20vw; 
+    width: 250px;
+    transition: transform 3s ease-out;
+}
+
+.sliding-cloud2.visible {
+    transform: translateX(-20vw);
+}
+
+.sliding-cloud3 {
+    position: absolute;
+    bottom: 80px;
+    left: -20vw;
+    width: 180px;
+    transition: transform 3s ease-out;
+}
+
+.sliding-cloud3.visible {
+    transform: translateX(34vw);
+}

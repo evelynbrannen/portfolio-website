@@ -1,0 +1,33 @@
+.desert-footer {
+    background-color: #d8bc8c;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    /* background-image: url('../assets/desert-floor-pixel.png'); */
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cactus-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: auto;
+    background-image: url('../assets/cactus-image.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    z-index: 0;
+}
+
+.desert-tile {
+    background-repeat: repeat-x;
+}

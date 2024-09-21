@@ -1,0 +1,36 @@
+.shooting-star {
+  position: absolute;
+  top: -50px;
+  left: 100vw;
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  z-index: 999;
+  animation: shooting 1.5s ease-in-out forwards;
+}
+
+@keyframes shooting {
+  0% {
+    top: 0vh;
+    left: 100vw;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: .3;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 40vh;
+    left: -10vw;
+    opacity: 0;
+  }
+}

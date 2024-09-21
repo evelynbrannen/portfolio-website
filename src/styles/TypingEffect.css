@@ -1,0 +1,52 @@
+/* .typing-container {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 3rem;
+    font-weight: bolder;
+    white-space: pre-wrap;
+    overflow: hidden;
+  }
+  
+  .typing-text {
+    display: inline;
+    border-right: 3px solid white;
+    animation: blink-caret 2s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+   */
+
+   .typing-container {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .typing-text {
+    white-space: nowrap;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 5px;
+    height: 1em;
+    background: rgb(255, 255, 255);
+    margin-left: 2px;
+    animation: blink 0.75s step-start infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      background: rgb(255, 255, 255);
+    }
+    50% {
+      background: transparent;
+    }
+  }
+  
