@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.d4ebda9e.css",
-    "main.js": "/portfolio-website/static/js/main.94c6fb7f.js",
+    "main.css": "/portfolio-website/static/css/main.ad6cf5ce.css",
+    "main.js": "/portfolio-website/static/js/main.63272695.js",
     "static/media/WorkSans-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
     "static/media/WorkSans-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-Italic-VariableFont_wght.909e4faac8822880e462.ttf",
     "static/media/IBMPlexMono-SemiBold.ttf": "/portfolio-website/static/media/IBMPlexMono-SemiBold.5f82c3b8863d23615092.ttf",
     "static/media/IBMPlexMono-Regular.ttf": "/portfolio-website/static/media/IBMPlexMono-Regular.1509e8d24f8562f776e4.ttf",
-    "static/media/cactus-image.png": "/portfolio-website/static/media/cactus-image.944e39161562cda433d5.png",
     "static/media/goodreads.png": "/portfolio-website/static/media/goodreads.0ecf59513b44fef1fd2d.png",
     "static/media/cloud-3-large.PNG": "/portfolio-website/static/media/cloud-3-large.b7c36554eb2f5cc3a5d8.PNG",
     "static/media/cloud-5-large.PNG": "/portfolio-website/static/media/cloud-5-large.b126b7a2cf8b7507fec6.PNG",
     "static/media/cloud-2-large.PNG": "/portfolio-website/static/media/cloud-2-large.aa75d3f01d160aceb8f9.PNG",
     "index.html": "/portfolio-website/index.html",
-    "main.d4ebda9e.css.map": "/portfolio-website/static/css/main.d4ebda9e.css.map",
-    "main.94c6fb7f.js.map": "/portfolio-website/static/js/main.94c6fb7f.js.map"
+    "main.ad6cf5ce.css.map": "/portfolio-website/static/css/main.ad6cf5ce.css.map",
+    "main.63272695.js.map": "/portfolio-website/static/js/main.63272695.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4ebda9e.css",
-    "static/js/main.94c6fb7f.js"
+    "static/css/main.ad6cf5ce.css",
+    "static/js/main.63272695.js"
   ]
 }
