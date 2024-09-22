@@ -6,6 +6,7 @@ import './styles/Animations.css';
 import Stars from './components/Stars';
 import TypingEffect from './components/TypingEffect';
 import Footer from './components/Footer';
+import PersonalProjects from './components/Carousel';
 import { DownloadPDF } from './components/DownloadPDF';
 import { slideInImageOnScroll } from './components/Animations';
 
@@ -333,6 +334,7 @@ function App() {
 
           <section id="section2" className="section">
             <h2>Projects</h2>
+            <PersonalProjects />
           </section>
 
         </div>

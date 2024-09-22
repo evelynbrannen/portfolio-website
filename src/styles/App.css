@@ -56,6 +56,7 @@ body {
 .section {
   padding: 50px;
   position: relative;
+  z-index: 10;
 }
 
 .cursor-custom {
@@ -187,7 +188,7 @@ button:hover {
 }
 
 .description {
-  padding-inline: 10%;
+  padding-inline: 25%;
 }
 
 .resume-section {
@@ -314,7 +315,7 @@ button:hover {
   transition: opacity 0.3s ease;
 }
 
-.email-container:hover .copied-text {
+.contact-container:hover .copied-text {
   opacity: 1;
 }
 
@@ -332,16 +333,14 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  /* For tablets and mobile screens */
   
   .Body {
     position: relative;
     z-index: 10;
     text-align: center;
     background: linear-gradient(to bottom, #041e39, #142e53, #2e5679, #699ab4, #a3d1e9);
-    padding-bottom: 150px; /* Add padding to avoid overlap with footer */
+    padding-bottom: 150px;
   }
-
 
   .section {
     padding: 20px;
@@ -367,22 +366,16 @@ button:hover {
   .description {
     padding-inline: 5%;
   }
-
-  .contact-buttons {
-    flex-direction: column; /* Stack the buttons vertically */
-    gap: 20px;
-  }
 }
 
 @media (max-width: 480px) {
-  /* For phones and very small devices */
 
   h2 {
     font-size: 1.8rem;
   }
 
   body {
-    font-size: 12px; /* Slightly smaller font for mobile */
+    font-size: 12px;
   }
 
   .Content {
@@ -407,6 +400,7 @@ button:hover {
   }
 
   .contact-buttons {
-    gap: 10px; /* Reduce gap on mobile */
+    gap: 10px;
+    flex-direction: column;
   }
 }

@@ -71,14 +71,25 @@
 .orbit {
     position: absolute;
     top: 10vh;
-    left: -25%;
-    width: 60vh;
+    left: -10vw;
+    width: 40vw;
     transition: transform 3s ease-out;
     opacity: 8%;
     z-index: 0;
 }
 
 .orbit.hidden {
-    transform: translateX(-5vw);
+    transform: translateX(-10vw);
 }
  
+@media (max-width: 768px) {
+    .orbit {
+        position: absolute;
+        top: 10vh;
+        left: -15vw;
+        width: 60vw;
+        transition: transform 3s ease-out;
+        opacity: 8%;
+        z-index: 0;
+    }
+}
