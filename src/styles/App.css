@@ -34,7 +34,8 @@ body {
   box-sizing: border-box;
   background-color: #203151;
   color: #ffffff;
-  cursor: none
+  cursor: none;
+  z-index: 0;
 }
 
 .App {
@@ -42,6 +43,8 @@ body {
 }
 
 .Body {
+  position: relative;
+  z-index: 10;
   text-align: center;
   background: linear-gradient(to bottom, #041e39, #142e53, #2e5679, #699ab4, #a3d1e9);
 }
@@ -52,6 +55,7 @@ body {
 
 .section {
   padding: 50px;
+  position: relative;
 }
 
 .cursor-custom {
@@ -98,6 +102,10 @@ body {
 #title h2 {
   font-size: 3rem;
   font-weight: bolder;
+}
+
+nav {
+  position: relative;
 }
 
 nav ul {
@@ -175,6 +183,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  z-index: 10;
 }
 
 .description {
@@ -189,7 +198,7 @@ button:hover {
 }
 
 .resume-section:hover {
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: rgba(255, 255, 255, 0.11);
 }
 
 .resume-section p {
@@ -229,6 +238,7 @@ button:hover {
 .custom-link {
   color: #FFFFFF; 
   text-decoration: none;
+  z-index: 10;
 }
 
 .custom-link:hover {
@@ -272,9 +282,10 @@ button:hover {
   filter: invert(1) sepia(1) saturate(100000%) hue-rotate(175deg) brightness(.6);
 }
 
-.email-container {
+.contact-container {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 .copy-icon {
@@ -289,7 +300,7 @@ button:hover {
   opacity: 0;
 }
 
-.email-container:hover .copy-icon {
+.contact-container:hover .copy-icon {
   opacity: 1;
 }
 
@@ -309,4 +320,93 @@ button:hover {
 
 .bi-download {
   margin-left: 6px;
+}
+
+.education-section {
+  margin-top: 20px;
+}
+
+.education-item {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* For tablets and mobile screens */
+  
+  .Body {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background: linear-gradient(to bottom, #041e39, #142e53, #2e5679, #699ab4, #a3d1e9);
+    padding-bottom: 150px; /* Add padding to avoid overlap with footer */
+  }
+
+
+  .section {
+    padding: 20px;
+  }
+
+  .Content {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .resume {
+    padding: 20px;
+  }
+
+  .resume-section {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    padding-inline: 5%;
+  }
+
+  .contact-buttons {
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For phones and very small devices */
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  body {
+    font-size: 12px; /* Slightly smaller font for mobile */
+  }
+
+  .Content {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .description {
+    padding-inline: 2%;
+  }
+
+  .resume {
+    padding: 10px;
+  }
+
+  .resume-section {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .contact-buttons {
+    gap: 10px; /* Reduce gap on mobile */
+  }
 }

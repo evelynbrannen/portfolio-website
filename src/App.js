@@ -11,6 +11,8 @@ import { slideInImageOnScroll } from './components/Animations';
 
 
 function App() {
+  const [orbitVisible, setOrbitVisible] = useState(true); // Track orbit visibility
+  const orbitRef = useRef(null);
   const [imageVisible, setImageVisible] = useState(false);
   const imageRef = useRef(null);
   const sectionsRef = useRef([]);
@@ -63,7 +65,24 @@ function App() {
     };
   }, []);
 
-  // slide animation
+  // orbit
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setOrbitVisible(false); // Orbit slides out after scrolling down 100px
+      } else {
+        setOrbitVisible(true); // Orbit stays visible when near the top
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // slide animation for clouds
   useEffect(() => {
     const cleanup = slideInImageOnScroll(imageRef, setImageVisible);
     return cleanup;
@@ -97,6 +116,14 @@ function App() {
   return (
     <div className="App">
       <div className="Body">
+        <div className="orbit-container">
+          <img
+            ref={orbitRef}
+            className={`orbit ${!orbitVisible ? 'hidden' : ''}`} // Toggle 'hidden' class on scroll
+            src={require('./assets/orbits.png')}
+            alt="orbits"
+          />
+        </div>
         <div className="Content">
           <div className="cursor-custom"></div>
           <div className="cursor-outline"></div>
@@ -126,19 +153,21 @@ function App() {
             <DownloadPDF />
             <div className="resume">
 
-              <h2>Education</h2>
-              <div className="row">
-                <div className="column">
-                  B.S. Computer Science - Expected Dec 2024<br />
-                  Arizona State University, Tempe, AZ<br />
-                  GPA: 4.00<br />
-                  Barrett, the Honors College
-                </div>
-                <div className="column">
-                  M.S. Computer Science - Expected Dec 2025<br />
-                  Arizona State University, Tempe, AZ
-                </div>
+            <h2>Education</h2>
+            <div className="education-section">
+              <div className="education-item">
+                <strong>B.S. Computer Science - Expected Dec 2024</strong><br />
+                Arizona State University, Tempe, AZ<br />
+                GPA: 4.00<br />
+                Barrett, the Honors College<br />
               </div>
+              
+              <div className="education-item">
+                <strong>M.S. Computer Science - Expected Dec 2025</strong><br />
+                Arizona State University, Tempe, AZ
+              </div>
+            </div>
+            <br />
 
               <h2>Work Experience</h2>
               <p ref={(el) => (sectionsRef.current[0] = el)} className="resume-section hidden">
@@ -208,6 +237,7 @@ function App() {
                   </div>
                 </div>
               </p>
+              <br />
 
               <h2>Technical Projects</h2>
               <p ref={(el) => (sectionsRef.current[3] = el)} className="resume-section hidden">
@@ -278,7 +308,8 @@ function App() {
                   </div>
                 </div>
               </p>
-
+              <br />
+              
               <h2>Leadership Experience</h2>
               <p ref={(el) => (sectionsRef.current[6] = el)} className="resume-section hidden">
                 <div className="row">
@@ -309,8 +340,8 @@ function App() {
         <section id="section3" className="section">
           <h2>Contact</h2>
           <p>
-            email:
-            <span className="email-container">
+            email: {" "}
+            <span className="contact-container">
               <a href="mailto:evelynvb1511@gmail.com" target="_blank" className="custom-link">
                 evelynvb1511@gmail.com
               </a>
@@ -321,9 +352,12 @@ function App() {
           </p>
 
           <p>
-            phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
-          </p>
+            <span className="contact-container">
+                      phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
+                    </span>
 
+          </p>
+          
           <div className="contact-buttons">
             <button className="icon" onClick={() => window.open('https://www.linkedin.com/in/evelyn-brannen/', '_blank')}>
               <i className="bi bi-linkedin"></i>
@@ -341,6 +375,9 @@ function App() {
 
         </section>
 
+        <section className='section'>
+          <p></p>
+        </section>
 
         <div className='cloud-container'>
           
@@ -362,11 +399,20 @@ function App() {
             src={require('./assets/cloud-5-large.PNG')}
             alt="clouds"
           />
+          <img
+            ref={imageRef}
+            className={`sliding-cloud4 ${imageVisible ? 'visible' : ''}`}
+            src={require('./assets/cloud-3-large.PNG')}
+            alt="clouds"
+          />
         </div>
 
+        <div className='footer-container'>
+          <img className="cactus-1" src={require('./assets/cactus-1.png')} alt="cactus" />
+          <img className="cactus-2" src={require('./assets/cactus-2.png')} alt="cactus" />
+          <div className='desert-footer'></div>
+        </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

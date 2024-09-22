@@ -1,33 +1,38 @@
+.footer-container {
+    position: absolute;
+    height: 450px;
+    overflow: hidden;
+    bottom: 0vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+  
+.cactus-1 {
+    position: absolute;
+    bottom: 3vh; 
+    right: -60px;
+    height: 50vh;
+    z-index: 1; 
+}
+
+.cactus-2 {
+    position: absolute;
+    bottom: 6vh; 
+    left: 30px;
+    height: 30vh;
+    z-index: 1; 
+}
+
 .desert-footer {
     background-color: #d8bc8c;
     color: #fff;
     padding: 0px;
     text-align: center;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 70px;
-    /* background-image: url('../assets/desert-floor-pixel.png'); */
-}
-
-.footer-content {
-    position: relative;
-    z-index: 1;
-}
-
-.cactus-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: max-content;
-    height: auto;
-    background-image: url('../assets/cactus-image.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: contain;
+    height: 120px;
     z-index: 0;
-}
-
-.desert-tile {
-    background-repeat: repeat-x;
+    bottom: 0px
 }
