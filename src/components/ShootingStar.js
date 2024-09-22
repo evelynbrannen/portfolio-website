@@ -38,7 +38,7 @@ const ShootingStar = () => {
   return visible ? (
     <div
       className="shooting-star"
-      style={{ transform: `rotate(${angle}deg)` }} // Dynamically set rotation
+      style={{ transform: `rotate(${angle}deg)` }}
     ></div>
   ) : null;
 };

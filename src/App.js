@@ -65,9 +65,8 @@ function App() {
 
   // slide animation
   useEffect(() => {
-    // Use the slide in animation function
     const cleanup = slideInImageOnScroll(imageRef, setImageVisible);
-    return cleanup; // Cleanup event listener on unmount
+    return cleanup;
   }, []);
 
   // resume section animation
@@ -348,19 +347,19 @@ function App() {
           <img
             ref={imageRef}
             className={`sliding-cloud1 ${imageVisible ? 'visible' : ''}`}
-            src={require('./assets/cloud3.png')}
+            src={require('./assets/cloud-3-large.PNG')}
             alt="clouds"
           />
           <img
             ref={imageRef}
             className={`sliding-cloud2 ${imageVisible ? 'visible' : ''}`}
-            src={require('./assets/cloud2.png')}
+            src={require('./assets/cloud-2-large.PNG')}
             alt="clouds"
           />
           <img
             ref={imageRef}
             className={`sliding-cloud3 ${imageVisible ? 'visible' : ''}`}
-            src={require('./assets/cloud1.png')}
+            src={require('./assets/cloud-5-large.PNG')}
             alt="clouds"
           />
         </div>

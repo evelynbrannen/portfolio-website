@@ -1,18 +1,20 @@
- 
+/*  
 .cloud-container {
-    position: relative; 
+    position: absolute; 
+    bottom: 500px;
     overflow: hidden;
     width: 100%;
-    height: 300px;
-    margin-top: -100px;
+    height: 1200px;
+    z-index: 0;
 }
 
 .sliding-cloud1 {
     position: absolute;
-    bottom: 170px;
-    left: -20vw;
-    width: 250px;
+    bottom: 700px;
+    left: -35vw;
+    width: 400px;
     transition: transform 3s ease-out;
+    opacity: 15%;
 }
 
 .sliding-cloud1.visible {
@@ -21,10 +23,11 @@
 
 .sliding-cloud2 {
     position: absolute;
-    bottom: 140px;
-    right: -20vw; 
-    width: 250px;
+    bottom: 450px;
+    right: -40vw; 
+    width: 450px;
     transition: transform 3s ease-out;
+    opacity: 50%;
 }
 
 .sliding-cloud2.visible {
@@ -33,10 +36,59 @@
 
 .sliding-cloud3 {
     position: absolute;
-    bottom: 80px;
-    left: -20vw;
-    width: 180px;
+    bottom: 300px;
+    left: -40vw;
+    width: 300px;
     transition: transform 3s ease-out;
+    opacity: 70%;
+}
+
+.sliding-cloud3.visible {
+    transform: translateX(34vw);
+} */
+
+.cloud-container {
+    position: absolute; 
+    bottom: 20vh;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.sliding-cloud1 {
+    position: absolute;
+    bottom: 65vh;
+    left: -35vw;
+    width: 40vw;
+    transition: transform 3s ease-out;
+    opacity: 15%;
+}
+
+.sliding-cloud1.visible {
+    transform: translateX(20vw);
+}
+
+.sliding-cloud2 {
+    position: absolute;
+    bottom: 45vh;
+    right: -40vw; 
+    width: 45vw;
+    transition: transform 3s ease-out;
+    opacity: 50%;
+}
+
+.sliding-cloud2.visible {
+    transform: translateX(-20vw);
+}
+
+.sliding-cloud3 {
+    position: absolute;
+    bottom: 30vh;
+    left: -40vw;
+    width: 30vw;
+    transition: transform 3s ease-out;
+    opacity: 70%;
 }
 
 .sliding-cloud3.visible {

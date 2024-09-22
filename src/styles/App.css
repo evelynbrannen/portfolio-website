@@ -145,10 +145,10 @@ button:hover {
 
 @keyframes slideTumbleweed {
   0% {
-    left: -100px; /* Off the screen to the left */
+    left: -100px;
   }
   100% {
-    left: 100vw; /* Moves across the screen to the right */
+    left: 100vw;
   }
 }
 
@@ -182,14 +182,14 @@ button:hover {
 }
 
 .resume-section {
-  background-color: rgba(255, 255, 255, 0.1); /* Initial subtle transparency */
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 8px;
 }
 
 .resume-section:hover {
-  background-color: rgba(255, 255, 255, 0.14); /* Slightly more opaque on hover */
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .resume-section p {
@@ -198,7 +198,7 @@ button:hover {
 
 .resume-section.hidden {
   opacity: 0;
-  transform: translateX(-50px); /* Slide in from the left */
+  transform: translateX(-50px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
@@ -298,13 +298,13 @@ button:hover {
   top: -20px;
   left: 0;
   font-size: 12px;
-  color: #2b3796; /* You can customize this color */
+  color: #2b3796;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .email-container:hover .copied-text {
-  opacity: 1; /* Fade in the "Email Copied!" message */
+  opacity: 1;
 }
 
 .bi-download {
