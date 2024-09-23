@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.ad6cf5ce.css",
-    "main.js": "/portfolio-website/static/js/main.63272695.js",
+    "main.css": "/portfolio-website/static/css/main.e0c2cf54.css",
+    "main.js": "/portfolio-website/static/js/main.864c6bc7.js",
+    "static/media/pokemon.png": "/portfolio-website/static/media/pokemon.d635d6ff31689ac99699.png",
+    "static/media/app.png": "/portfolio-website/static/media/app.0b68a3f54fdd7d6de03e.png",
     "static/media/WorkSans-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
     "static/media/WorkSans-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-Italic-VariableFont_wght.909e4faac8822880e462.ttf",
+    "static/media/capstone.png": "/portfolio-website/static/media/capstone.74f8ea55ba77d97e15cf.png",
+    "static/media/jewelry-cropped.PNG": "/portfolio-website/static/media/jewelry-cropped.0e6fac3aa7dc5ea9bd3a.PNG",
+    "static/media/portfolio.png": "/portfolio-website/static/media/portfolio.ed96192989883e2b60ff.png",
     "static/media/IBMPlexMono-SemiBold.ttf": "/portfolio-website/static/media/IBMPlexMono-SemiBold.5f82c3b8863d23615092.ttf",
     "static/media/IBMPlexMono-Regular.ttf": "/portfolio-website/static/media/IBMPlexMono-Regular.1509e8d24f8562f776e4.ttf",
     "static/media/goodreads.png": "/portfolio-website/static/media/goodreads.0ecf59513b44fef1fd2d.png",
@@ -11,11 +16,11 @@
     "static/media/cloud-5-large.PNG": "/portfolio-website/static/media/cloud-5-large.b126b7a2cf8b7507fec6.PNG",
     "static/media/cloud-2-large.PNG": "/portfolio-website/static/media/cloud-2-large.aa75d3f01d160aceb8f9.PNG",
     "index.html": "/portfolio-website/index.html",
-    "main.ad6cf5ce.css.map": "/portfolio-website/static/css/main.ad6cf5ce.css.map",
-    "main.63272695.js.map": "/portfolio-website/static/js/main.63272695.js.map"
+    "main.e0c2cf54.css.map": "/portfolio-website/static/css/main.e0c2cf54.css.map",
+    "main.864c6bc7.js.map": "/portfolio-website/static/js/main.864c6bc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad6cf5ce.css",
-    "static/js/main.63272695.js"
+    "static/css/main.e0c2cf54.css",
+    "static/js/main.864c6bc7.js"
   ]
 }
