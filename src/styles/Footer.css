@@ -36,3 +36,15 @@
     z-index: 0;
     bottom: 0px
 }
+
+@media (max-width: 768px) {
+    .cactus-1 {
+        right: -15vw;
+        height: 40vh;
+    }
+    
+    .cactus-2 {
+        left: 0vw;
+        height: 20vh;
+    }
+}

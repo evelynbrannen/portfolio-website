@@ -1,58 +1,69 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 18rem;
-    height: fit-content;
-    padding: 0 2rem 2rem 2rem;
-    border-radius: 10px;
-    color:#507194;
-  }
-  
-  .card img {
-    margin-top: -20%;
-    width: 100%;
-    border-radius: 20px;
-  }
-  
-  .card h2 {
-    margin: 0;
-    margin-top: 1rem;
-  }
-  
-  .card p {
-    margin: 0;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .card .btnn {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  .button {
-    background-color: #5da2d0;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .button:hover {
-    background-color: #36749d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 18rem;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 10px;
+  color: #507194;
+}
+
+.card img {
+  margin-top: -20%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .btnn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button {
+  background-color: #5da2d0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #36749d;
+}
+
+.skills {
+  font-size: .8rem;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+  color: #9fbdd0;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 60%;
+    margin: auto;
   }
 
-  .skills {
-    font-size: .8rem;
-    margin-top: .8rem;
-    margin-bottom: .5rem;
-    color: #9fbdd0;
+  .card {
+    width: 15rem;
   }
+}
