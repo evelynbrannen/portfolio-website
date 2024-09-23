@@ -50,7 +50,7 @@ body {
 }
 
 .Content {
-    padding: 50px;
+  padding: 50px;
 }
 
 .section {
@@ -156,6 +156,7 @@ button:hover {
   0% {
     left: -100px;
   }
+
   100% {
     left: 100vw;
   }
@@ -231,13 +232,13 @@ button:hover {
   color: #ffffff;
   padding: 5px 15px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 14px;
   width: fit-content;
   white-space: nowrap;
 }
 
 .custom-link {
-  color: #FFFFFF; 
+  color: #FFFFFF;
   text-decoration: none;
   z-index: 10;
 }
@@ -276,7 +277,6 @@ button:hover {
   width: 24px;
   height: 24px;
   cursor: none;
-  margin-top: 1.5px;
 }
 
 .goodreads-icon:hover {
@@ -332,8 +332,84 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.wics {
+  color: white;
+  text-decoration: none;
+}
+
+.wics:hover {
+  color: rgb(163, 204, 231);
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10px) translateX(-50vw);
+  }
+
+  10% {
+    transform: translateY(10px) translateX(-35vw);
+  }
+
+  20% {
+    transform: translateY(-10px) translateX(-20vw);
+  }
+
+  30% {
+    transform: translateY(10px) translateX(-5vw);
+  }
+
+  40% {
+    transform: translateY(-10px) translateX(10vw);
+  }
+
+  50% {
+    transform: translateY(10px) translateX(25vw);
+  }
+
+  60% {
+    transform: translateY(-10px) translateX(40vw);
+  }
+
+  70% {
+    transform: translateY(10px) translateX(55vw);
+  }
+
+  80% {
+    transform: translateY(-10px) translateX(70vw);
+  }
+
+  90% {
+    transform: translateY(10px) translateX(85vw);
+  }
+
+  100% {
+    transform: translateY(-10px) translateX(100vw);
+  }
+}
+
+.hot-air-balloon-container {
+  position: absolute;
+  bottom: 60vh;
+  overflow: hidden;
+  width: 100%;
+  height: 1100px;
+  z-index: 0;
+}
+
+.hot-air-balloon {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  animation: animate 60s linear infinite;
+  height: 30vh;
+  z-index: 0;
+  opacity: 40%;
+  pointer-events: auto;
+}
+
 @media (max-width: 768px) {
-  
+
   .Body {
     position: relative;
     z-index: 10;

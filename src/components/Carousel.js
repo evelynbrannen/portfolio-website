@@ -4,7 +4,7 @@ import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import '../styles/Carousel.css';
 import jewelryImage from '../assets/jewelry-cropped.PNG';
-import capstone from '../assets/capstone.png';
+import capstone from '../assets/capstone-cropped.png';
 import portfolio from '../assets/portfolio.png';
 import pokemon from '../assets/pokemon.png';
 import app from '../assets/app.png';
@@ -84,7 +84,7 @@ function App() {
         {
             title: "DocYou LLC",
             skills: "REACT NATIVE | FIGMA | FIREBASE",
-            description: "Mobile app for Phoenix Children's Hospital to assist medical resident's procedure documentation. Made with React Native",
+            description: "Mobile app for Phoenix Children's Hospital to assist medical resident's procedure documentation. Made with React Native.",
             img: docYou,
             link: "https://www.linkedin.com/company/docyou/",
             button: "LinkedIn"
@@ -92,7 +92,7 @@ function App() {
         {
             title: "3D ML Visualization",
             skills: "UNITY | C#",
-            description: "Interactive 3D learning environment for visualizing machine learning algorithms, made with Unity (capstone project)",
+            description: "Interactive 3D learning environment for visualizing machine learning algorithms. (capstone project)",
             img: capstone,
             link: "https://machine-learning-visualization.github.io/",
             button: "View Project (in progress)"
@@ -100,18 +100,18 @@ function App() {
         {
             title: "This Website",
             skills: "REACT | HTML/CSS | JAVASCRIPT",
-            description: "This website! Made from scratch using React, HTML/CSS, and Javascript",
+            description: "This website! Made from scratch using React, HTML/CSS, and Javascript. Illustrations done in Procreate.",
             img: portfolio,
             link: "https://evelynbrannen.github.io/portfolio-website/",
-            button: "(ur already there)"
+            button: "(ur already here <3)"
         },
         {
             title: "Jewelry Website",
             skills: "HTML/CSS | JAVASCRIPT",
-            description: "Website to create a custom bracelet, made using HTML/CSS and javascript",
+            description: "Website to create a custom bracelet, made using HTML/CSS and Javascript.",
             img: jewelryImage,
             link: "https://evelynbrannen.github.io/jewelry-customizer/",
-            button: "View Website"
+            button: "Visit Website"
         },
         {
             title: "Pokémon PCA",

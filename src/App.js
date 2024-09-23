@@ -9,10 +9,11 @@ import Footer from './components/Footer';
 import PersonalProjects from './components/Carousel';
 import { DownloadPDF } from './components/DownloadPDF';
 import { slideInImageOnScroll } from './components/Animations';
+import hotAirBalloon from './assets/hot-air-balloon.png';
 
 
 function App() {
-  const [orbitVisible, setOrbitVisible] = useState(true); // Track orbit visibility
+  const [orbitVisible, setOrbitVisible] = useState(true);
   const orbitRef = useRef(null);
   const [imageVisible, setImageVisible] = useState(false);
   const imageRef = useRef(null);
@@ -120,9 +121,16 @@ function App() {
         <div className="orbit-container">
           <img
             ref={orbitRef}
-            className={`orbit ${!orbitVisible ? 'hidden' : ''}`} // Toggle 'hidden' class on scroll
+            className={`orbit ${!orbitVisible ? 'hidden' : ''}`}
             src={require('./assets/orbits.png')}
             alt="orbits"
+          />
+        </div>
+        <div className='hot-air-balloon-container'>
+          <img
+            className="hot-air-balloon"
+            src={hotAirBalloon}
+            alt="Hot Air Balloon"
           />
         </div>
         <div className="Content">
@@ -144,8 +152,16 @@ function App() {
               {/* <TypingEffect text="Evelyn Brannen" speed={100} /> */}
               Evelyn Brannen
             </h2>
-            <div className="description">
-              Hello! I’m Evelyn, and I’m passionate about blending creativity with technology. I’m currently a senior studying Computer Science at Arizona State University, and I’m on an accelerated track to get my Masters in Computer Science in December 2025. Thank you for stopping by :)
+            <div className="description">              
+              <p>
+                Hello! <b>I’m Evelyn, and I’m passionate about blending creativity with technology.</b> I’m currently a senior studying Computer Science at Arizona State University, and I’m on an accelerated track to get my Masters in Computer Science in December of 2025.
+              </p> 
+              <p>
+                Over the past two summers, I interned at AVEVA as a backend developer, focusing on improving performance and enhancing reliability for their cloud platform. I'm also committed to promoting diversity in tech as the Vice President of Internal Affairs in Women in Computer Science at ASU.
+              </p>
+              <p>
+                When I'm not working, you'll probably find me with a good book and a cup of coffee or learning a new song on my guitar. Thanks for stopping by!
+              </p>
             </div>
           </section>
 
@@ -218,9 +234,8 @@ function App() {
                     <br /><i>Fulton Schools Career Center</i>
                     <br />
                     <ul>
-                      <li>Improved application performance by migrating a critical method DeleteSignupsAsync from Entity Framework Core to SQL stored procedures, achieving an estimated 30% reduction in query execution time.</li>
-                      <li>Implemented comprehensive unit tests using tSQLt, resulting in a 40% increase in code coverage.</li>
-                      <li>Refactored 3 obsolete API endpoints, resulting in increased readability of the codebase and improved overall efficiency.</li>
+                      <li>Deliver timely responses to a wide range of career-related inquiries from students and employers via phone and email.</li>
+                      <li>Send weekly newsletter to 60,000+ Fulton Engineering students regarding career development and employer events.</li>
                     </ul>
                   </div>
                 </div>
@@ -305,7 +320,7 @@ function App() {
                     Aug 2023 - <br />Present
                   </div>
                   <div className="column right">
-                    <b>Women in Computer Science</b>
+                  <b><a href="https://www.instagram.com/wics.asu/" class="wics" target="_blank" rel="noopener noreferrer">Women in Computer Science{' '}<i class="bi bi-box-arrow-up-right"></i></a></b>
                     <br /><i>Vice President of Internal Affairs</i>
                     <br />
                     <ul>
@@ -331,7 +346,7 @@ function App() {
         <section id="section3" className="section">
           <h2>Contact</h2>
           <p>
-            email: {" "}
+            Email: {" "}
             <span className="contact-container">
               <a href="mailto:evelynvb1511@gmail.com" target="_blank" className="custom-link">
                 evelynvb1511@gmail.com
@@ -344,7 +359,7 @@ function App() {
 
           <p>
             <span className="contact-container">
-              phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
+              Phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
             </span>
 
           </p>
@@ -370,7 +385,6 @@ function App() {
         </section>
 
         <div className='cloud-container'>
-          
           <img
             ref={imageRef}
             className={`sliding-cloud1 ${imageVisible ? 'visible' : ''}`}
