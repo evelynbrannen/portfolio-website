@@ -50,7 +50,7 @@
     position: absolute;
     bottom: 10vh;
     right: -40vw; 
-    width: 40vw;
+    width: 30vw;
     transition: transform 3s ease-out;
     opacity: 100%;
 }
@@ -83,6 +83,10 @@
 }
  
 @media (max-width: 768px) {
+    .sliding-cloud4 {
+        width: 40vw;
+    }
+
     .orbit {
         position: absolute;
         top: 10vh;
@@ -92,4 +96,5 @@
         opacity: 8%;
         z-index: 0;
     }
+
 }

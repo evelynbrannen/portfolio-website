@@ -34,7 +34,6 @@
     align-items: center;
   }
   
-  /* Button Styling */
   .button {
     background-color: #5da2d0;
     color: white;
@@ -49,4 +48,11 @@
   
   .button:hover {
     background-color: #36749d;
+  }
+
+  .skills {
+    font-size: .8rem;
+    margin-top: .8rem;
+    margin-bottom: .5rem;
+    color: #9fbdd0;
   }

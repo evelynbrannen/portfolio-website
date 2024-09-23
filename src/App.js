@@ -70,9 +70,9 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setOrbitVisible(false); // Orbit slides out after scrolling down 100px
+        setOrbitVisible(false);
       } else {
-        setOrbitVisible(true); // Orbit stays visible when near the top
+        setOrbitVisible(true);
       }
     };
 
@@ -132,10 +132,10 @@ function App() {
 
           <nav>
             <ul>
-              <li><Link to="title" smooth={true} duration={500}>About Me</Link></li>
-              <li><Link to="section1" smooth={true} duration={500}>Resume</Link></li>
-              <li><Link to="section2" smooth={true} duration={500}>Projects</Link></li>
-              <li><Link to="section3" smooth={true} duration={500}>Contact</Link></li>
+              <li><Link to="title" smooth={true} duration={1000}>About Me</Link></li>
+              <li><Link to="section1" smooth={true} duration={1000}>Experience</Link></li>
+              <li><Link to="section2" smooth={true} duration={1000}>Projects</Link></li>
+              <li><Link to="section3" smooth={true} duration={1500}>Contact</Link></li>
             </ul>
           </nav>
 
@@ -150,25 +150,11 @@ function App() {
           </section>
 
           <section id="section1" className="section">
-            <h2>Resume</h2>
             <DownloadPDF />
-            <div className="resume">
-
-            <h2>Education</h2>
-            <div className="education-section">
-              <div className="education-item">
-                <strong>B.S. Computer Science - Expected Dec 2024</strong><br />
-                Arizona State University, Tempe, AZ<br />
-                GPA: 4.00<br />
-                Barrett, the Honors College<br />
-              </div>
-              
-              <div className="education-item">
-                <strong>M.S. Computer Science - Expected Dec 2025</strong><br />
-                Arizona State University, Tempe, AZ
-              </div>
-            </div>
             <br />
+            <br />
+            
+            <div className="resume">
 
               <h2>Work Experience</h2>
               <p ref={(el) => (sectionsRef.current[0] = el)} className="resume-section hidden">
@@ -216,6 +202,7 @@ function App() {
                       <div className="skill">SQL</div>
                       <div className="skill">Unit Testing</div>
                       <div className="skill">API</div>
+                      <div className="skill">Azure DevOps</div>
                     </div>
                   </div>
                 </div>
@@ -240,7 +227,7 @@ function App() {
               </p>
               <br />
 
-              <h2>Technical Projects</h2>
+              {/* <h2>Technical Projects</h2>
               <p ref={(el) => (sectionsRef.current[3] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
@@ -309,7 +296,7 @@ function App() {
                   </div>
                 </div>
               </p>
-              <br />
+              <br /> */}
               
               <h2>Leadership Experience</h2>
               <p ref={(el) => (sectionsRef.current[6] = el)} className="resume-section hidden">
@@ -334,6 +321,8 @@ function App() {
 
           <section id="section2" className="section">
             <h2>Projects</h2>
+            <br />
+            <br />
             <PersonalProjects />
           </section>
 
@@ -355,8 +344,8 @@ function App() {
 
           <p>
             <span className="contact-container">
-                      phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
-                    </span>
+              phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
+            </span>
 
           </p>
           
@@ -374,7 +363,6 @@ function App() {
               />
             </button>
           </div>
-
         </section>
 
         <section className='section'>

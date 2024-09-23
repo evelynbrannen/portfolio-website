@@ -15,7 +15,7 @@ export const DownloadPDF = () => {
 
     return (
         <button onClick={onButtonClick} className="button-minimal">
-            Download PDF
+            Download Resume
             <i className="bi bi-download"></i>
         </button>
     );
