@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.9b43cd26.css",
-    "main.js": "/portfolio-website/static/js/main.6e1b7fce.js",
+    "main.css": "/portfolio-website/static/css/main.06120073.css",
+    "main.js": "/portfolio-website/static/js/main.599dac6d.js",
     "static/media/pokemon.png": "/portfolio-website/static/media/pokemon.d635d6ff31689ac99699.png",
     "static/media/app.png": "/portfolio-website/static/media/app.0b68a3f54fdd7d6de03e.png",
     "static/media/WorkSans-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
     "static/media/WorkSans-Italic-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-Italic-VariableFont_wght.909e4faac8822880e462.ttf",
     "static/media/docYou.png": "/portfolio-website/static/media/docYou.d6dddde4e1c5b4dc9814.png",
-    "static/media/capstone.png": "/portfolio-website/static/media/capstone.74f8ea55ba77d97e15cf.png",
     "static/media/jewelry-cropped.PNG": "/portfolio-website/static/media/jewelry-cropped.0e6fac3aa7dc5ea9bd3a.PNG",
     "static/media/portfolio.png": "/portfolio-website/static/media/portfolio.ed96192989883e2b60ff.png",
     "static/media/IBMPlexMono-SemiBold.ttf": "/portfolio-website/static/media/IBMPlexMono-SemiBold.5f82c3b8863d23615092.ttf",
     "static/media/IBMPlexMono-Regular.ttf": "/portfolio-website/static/media/IBMPlexMono-Regular.1509e8d24f8562f776e4.ttf",
+    "static/media/capstone-cropped.png": "/portfolio-website/static/media/capstone-cropped.e0f999e0c02bce4f3b8d.png",
     "static/media/goodreads.png": "/portfolio-website/static/media/goodreads.0ecf59513b44fef1fd2d.png",
+    "static/media/hot-air-balloon.png": "/portfolio-website/static/media/hot-air-balloon.84625b4719564f67e604.png",
     "static/media/cloud-3-large.PNG": "/portfolio-website/static/media/cloud-3-large.b7c36554eb2f5cc3a5d8.PNG",
     "static/media/cloud-5-large.PNG": "/portfolio-website/static/media/cloud-5-large.b126b7a2cf8b7507fec6.PNG",
     "static/media/cloud-2-large.PNG": "/portfolio-website/static/media/cloud-2-large.aa75d3f01d160aceb8f9.PNG",
     "index.html": "/portfolio-website/index.html",
-    "main.9b43cd26.css.map": "/portfolio-website/static/css/main.9b43cd26.css.map",
-    "main.6e1b7fce.js.map": "/portfolio-website/static/js/main.6e1b7fce.js.map"
+    "main.06120073.css.map": "/portfolio-website/static/css/main.06120073.css.map",
+    "main.599dac6d.js.map": "/portfolio-website/static/js/main.599dac6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b43cd26.css",
-    "static/js/main.6e1b7fce.js"
+    "static/css/main.06120073.css",
+    "static/js/main.599dac6d.js"
   ]
 }
