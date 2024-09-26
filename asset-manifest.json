@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.d681b108.css",
-    "main.js": "/portfolio-website/static/js/main.599dac6d.js",
+    "main.css": "/portfolio-website/static/css/main.d0f3e300.css",
+    "main.js": "/portfolio-website/static/js/main.63f8765a.js",
     "static/media/pokemon.png": "/portfolio-website/static/media/pokemon.d635d6ff31689ac99699.png",
     "static/media/app.png": "/portfolio-website/static/media/app.0b68a3f54fdd7d6de03e.png",
     "static/media/WorkSans-VariableFont_wght.ttf": "/portfolio-website/static/media/WorkSans-VariableFont_wght.a0297787a1a192213b53.ttf",
@@ -18,11 +18,11 @@
     "static/media/cloud-5-large.PNG": "/portfolio-website/static/media/cloud-5-large.b126b7a2cf8b7507fec6.PNG",
     "static/media/cloud-2-large.PNG": "/portfolio-website/static/media/cloud-2-large.aa75d3f01d160aceb8f9.PNG",
     "index.html": "/portfolio-website/index.html",
-    "main.d681b108.css.map": "/portfolio-website/static/css/main.d681b108.css.map",
-    "main.599dac6d.js.map": "/portfolio-website/static/js/main.599dac6d.js.map"
+    "main.d0f3e300.css.map": "/portfolio-website/static/css/main.d0f3e300.css.map",
+    "main.63f8765a.js.map": "/portfolio-website/static/js/main.63f8765a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d681b108.css",
-    "static/js/main.599dac6d.js"
+    "static/css/main.d0f3e300.css",
+    "static/js/main.63f8765a.js"
   ]
 }
