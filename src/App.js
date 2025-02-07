@@ -154,8 +154,11 @@ function App() {
             </h2>
             <div className="description">              
               <p>
-                Hello! <b>I’m Evelyn, and I’m passionate about blending creativity with technology.</b> I’m currently a senior studying Computer Science at Arizona State University, and I’m on an accelerated track to get my Masters in Computer Science in December of 2025.
+                Hello! <b>I’m Evelyn, and I’m passionate about blending creativity with technology.</b> 
               </p> 
+              <p>
+              I recently earned my B.S. in Computer Science from Arizona State University in December 2024, and I'm on an accelerated track to get a Master's in Computer Science in December of 2025.
+              </p>
               <p>
                 Over the past two summers, I interned at AVEVA as a backend developer, focusing on improving performance and enhancing reliability for their cloud platform. I'm also committed to promoting diversity in tech as the Vice President of Internal Affairs in Women in Computer Science at ASU.
               </p>
@@ -331,6 +334,22 @@ function App() {
                   </div>
                 </div>
               </p>
+              <p ref={(el) => (sectionsRef.current[7] = el)} className="resume-section hidden">
+                <div className="row">
+                  <div className="column left">
+                    Aug 2022
+                  </div>
+                  <div className="column right">
+                    <b>E2 Camp Counselor</b>
+                    <br /><i>Weekend camp for incoming engineering freshmen</i>
+                    <br />
+                    <ul>
+                      <li>Facilitated group activities and moderated debriefs for a group of 15 first-year engineering students.</li>
+                      <li> Fostered a positive camp environment and de-escalated conflicts through active engagement and effective communication.</li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
             </div>
           </section>
 
@@ -346,8 +365,8 @@ function App() {
         <section id="section3" className="section">
           <h2>Contact</h2>
           <p>
-            Email: {" "}
             <span className="contact-container">
+              Email: {" "}
               <a href="mailto:evelynvb1511@gmail.com" target="_blank" className="custom-link">
                 evelynvb1511@gmail.com
               </a>

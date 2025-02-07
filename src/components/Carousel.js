@@ -82,20 +82,20 @@ function CustomCarousel(props) {
 function App() {
     const projects = [
         {
+            title: "3D ML Visualization",
+            skills: "UNITY | C#",
+            description: "Interactive 3D learning environment for visualizing machine learning algorithms. (capstone project)",
+            img: capstone,
+            link: "https://machine-learning-visualization.github.io/",
+            button: "View Project"
+        },
+        {
             title: "DocYou LLC",
             skills: "REACT NATIVE | FIGMA | FIREBASE",
             description: "Mobile app for Phoenix Children's Hospital to assist medical resident's procedure documentation. Made with React Native.",
             img: docYou,
             link: "https://www.linkedin.com/company/docyou/",
             button: "LinkedIn"
-        },
-        {
-            title: "3D ML Visualization",
-            skills: "UNITY | C#",
-            description: "Interactive 3D learning environment for visualizing machine learning algorithms. (capstone project)",
-            img: capstone,
-            link: "https://machine-learning-visualization.github.io/",
-            button: "View Project (in progress)"
         },
         {
             title: "This Website",
@@ -113,14 +113,14 @@ function App() {
             link: "https://evelynbrannen.github.io/jewelry-customizer/",
             button: "Visit Website"
         },
-        {
-            title: "Pokémon PCA",
-            skills: "PYTHON",
-            description: "Used Principal Component Analysis (PCA) to reduce Deep Neural Net features from images to two dimensions. Effectively clusters Pokémon by shape and size.",
-            img: pokemon,
-            link: "",
-            button: ""
-        },
+        // {
+        //     title: "Pokémon PCA",
+        //     skills: "PYTHON",
+        //     description: "Used Principal Component Analysis (PCA) to reduce Deep Neural Net features from images to two dimensions. Effectively clusters Pokémon by shape and size.",
+        //     img: pokemon,
+        //     link: "",
+        //     button: ""
+        // },
         {
             title: "Book Tracking iOS App",
             skills: "SWIFT | REST API",
