@@ -157,10 +157,10 @@ function App() {
                 Hello! <b>I’m Evelyn, and I’m passionate about blending creativity with technology.</b> 
               </p> 
               <p>
-              I recently earned my B.S. in Computer Science from Arizona State University in December 2024, and I'm on an accelerated track to get a Master's in Computer Science in December of 2025.
+                I recently earned my B.S. in Computer Science from Arizona State University in December 2024, and I'm on an accelerated track to get a Master's in Computer Science in December of 2025!
               </p>
               <p>
-                Over the past two summers, I interned at AVEVA as a backend developer, focusing on improving performance and enhancing reliability for their cloud platform. I'm also committed to promoting diversity in tech as the Vice President of Internal Affairs in Women in Computer Science at ASU.
+                This summer I interned as a software engineer at Charles Schwab on the Cloud Support and Operations team, where I created a full-stack web application to improve the cloud deployment process. Previously, I've completed two internships at AVEVA as a backend developer, focusing on improving performance and enhancing reliability for their cloud platform. I'm also committed to promoting diversity in tech, and served as the Vice President of Internal Affairs in Women in Computer Science at ASU for two years.
               </p>
               <p>
                 When I'm not working, you'll probably find me with a good book and a cup of coffee or learning a new song on my guitar. Thanks for stopping by!
@@ -177,6 +177,33 @@ function App() {
 
               <h2>Work Experience</h2>
               <p ref={(el) => (sectionsRef.current[0] = el)} className="resume-section hidden">
+                <div className="row">
+                  <div className="column left">
+                    Jun 2025 - <br />Aug 2025
+                  </div>
+                  <div className="column right">
+                    <b>Software Development Intern</b>
+                    <br /><i>Charles Schwab</i>
+                    <br />
+                    <ul>
+                      <li>Designed and developed a full-stack internal web application to streamline the cloud go-live approval process, reducing manual overhead and improving visibility across teams. </li>
+                      <li>Built the backend/APIs with Java Spring Boot and JPA, modeling relational data and enabling scalable service integration.</li>
+                      <li>Enabled dynamic configuration using YAML templates, allowing frequent updates to workflow without code changes.</li>
+                      <li>Developed frontend with Angular and deployed services to Google Cloud Run using Terraform for infrastructure automation.</li>
+                      <li>Collaborated across cloud teams, gathering requirements and presenting final deliverables to ~50 stakeholders and engineers.</li>
+                    </ul>
+                    <div className="skill-container">
+                      <div className="skill">Angular</div>
+                      <div className="skill">Spring Boot</div>
+                      <div className="skill">Google Cloud Run</div>
+                      <div className="skill">Full Stack Development</div>
+                      <div className="skill">Terraform</div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+
+              <p ref={(el) => (sectionsRef.current[1] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
                     May 2024 - <br />Aug 2024
@@ -203,7 +230,7 @@ function App() {
                 </div>
               </p>
 
-              <p ref={(el) => (sectionsRef.current[1] = el)} className="resume-section hidden">
+              <p ref={(el) => (sectionsRef.current[2] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
                     May 2023 - <br />Aug 2023
@@ -227,7 +254,7 @@ function App() {
                 </div>
               </p>
 
-              <p ref={(el) => (sectionsRef.current[2] = el)} className="resume-section hidden">
+              <p ref={(el) => (sectionsRef.current[3] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
                     Jul 2022 - <br />Present
@@ -317,7 +344,7 @@ function App() {
               <br /> */}
               
               <h2>Leadership Experience</h2>
-              <p ref={(el) => (sectionsRef.current[6] = el)} className="resume-section hidden">
+              <p ref={(el) => (sectionsRef.current[4] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
                     Aug 2023 - <br />Present
@@ -334,7 +361,7 @@ function App() {
                   </div>
                 </div>
               </p>
-              <p ref={(el) => (sectionsRef.current[7] = el)} className="resume-section hidden">
+              <p ref={(el) => (sectionsRef.current[5] = el)} className="resume-section hidden">
                 <div className="row">
                   <div className="column left">
                     Aug 2022

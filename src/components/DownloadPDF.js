@@ -4,10 +4,10 @@ import '../styles/ButtonStyles.css';
 export const DownloadPDF = () => {
 
     const onButtonClick = () => {
-        const pdfUrl = `${process.env.PUBLIC_URL}/Evelyn Brannen Computer Science Resume January 2025.pdf`;
+        const pdfUrl = `${process.env.PUBLIC_URL}/Evelyn Brannen Computer Science Resume September 2025.pdf`;
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "Evelyn Brannen Computer Science Resume January 2025.pdf"; // specify the filename
+        link.download = "Evelyn Brannen Computer Science Resume September 2025.pdf"; // specify the filename
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
