@@ -133,26 +133,26 @@ button:hover {
   cursor: none;
 }
 
-.tumbleweed-container {
+/* .tumbleweed-container {
   bottom: 200px;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .resume {
   text-align: left;
   padding: 50px;
 }
-
+/* 
 .tumbleweed {
   position: absolute;
   bottom: 80px;
   left: -100px;
   width: 50px;
   animation: slideTumbleweed 10s linear infinite;
-}
+} */
 
-@keyframes slideTumbleweed {
+/* @keyframes slideTumbleweed {
   0% {
     left: -100px;
   }
@@ -160,7 +160,7 @@ button:hover {
   100% {
     left: 100vw;
   }
-}
+} */
 
 .row {
   display: flex;

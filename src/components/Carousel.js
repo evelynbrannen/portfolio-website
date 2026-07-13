@@ -108,7 +108,7 @@ function App() {
         {
             title: "Jewelry Website",
             skills: "HTML/CSS | JAVASCRIPT",
-            description: "Website to create a custom bracelet, made using HTML/CSS and Javascript.",
+            description: "Website used to create custom bracelet commissions, made using HTML/CSS and Javascript.",
             img: jewelryImage,
             link: "https://evelynbrannen.github.io/jewelry-customizer/",
             button: "Visit Website"

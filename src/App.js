@@ -157,10 +157,11 @@ function App() {
                 Hello! <b>I’m Evelyn, and I’m passionate about blending creativity with technology.</b> 
               </p> 
               <p>
-                I recently earned my B.S. in Computer Science from Arizona State University in December 2024, and I'm on an accelerated track to get a Master's in Computer Science in December of 2025!
+                I've recently graduated with a Master's in Computer Science in December 2025 through the Accelerated Master's Program at Arizona State University! I also earned my B.S. in Computer Science at ASU in December 2024.
+
               </p>
               <p>
-                This summer I interned as a software engineer at Charles Schwab on the Cloud Support and Operations team, where I created a full-stack web application to improve the cloud deployment process. Previously, I've completed two internships at AVEVA as a backend developer, focusing on improving performance and enhancing reliability for their cloud platform. I'm also committed to promoting diversity in tech, and served as the Vice President of Internal Affairs in Women in Computer Science at ASU for two years.
+                Currently I work as an Associate Cloud Engineer at Charles Schwab on the Cloud Tools Engineering team. I started out as a summer intern at Charles Schwab in 2025 on the Cloud Support and Operations team, where I created a full-stack web application to improve the cloud deployment process. I'm also committed to promoting diversity in tech, and served on the executive board of Women in Computer Science at ASU for over 3 years.
               </p>
               <p>
                 When I'm not working, you'll probably find me with a good book and a cup of coffee or learning a new song on my guitar. Thanks for stopping by!
@@ -401,13 +402,6 @@ function App() {
                 <i className="bi bi-copy"></i>
               </button>
             </span>
-          </p>
-
-          <p>
-            <span className="contact-container">
-              Phone: <a href="tel:+14806190068" target="_blank" className="custom-link">480-619-0068</a>
-            </span>
-
           </p>
           
           <div className="contact-buttons">
